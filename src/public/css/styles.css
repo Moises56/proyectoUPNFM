@@ -1,0 +1,173 @@
+body {
+  background: #fff;
+  font-family: "Oswald", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.index {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  background: black !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.bg-image {
+  color: white;
+  min-height: 30rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(rgb(109 25 133 / 29%), rgba(0, 0, 0, .9)), url(/img/fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+/* Docente */
+:root {
+  --main-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+  background: #4FB391;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.main-header .user-info {
+  align-self: center;
+}
+
+.navigation {
+  background: #2D6653;
+  height: calc(100vh - 50px);
+  position: fixed;
+  top: 71px;
+  left: 0;
+  width: 200px;
+  overflow: auto;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.navigation a {
+  color: var(--main-color);
+  display: block;
+  line-height: 3.5;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#main-content {
+  margin-left: 200px; /* Ajusta este valor según el ancho de tu barra lateral */
+    
+}
+#main-content h1 {
+  text-align: center;
+}
+
+.bg-image-login {
+  color: white;
+  min-height: 30rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(rgb(236 220 220 / 3%), rgba(0, 0, 0, .9)), url(/img/login.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-register {
+  color: white;
+  min-height: 30rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(rgb(236 220 220 / 3%), rgba(0, 0, 0, .9)), url(/img/login1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  border-radius: 1.2rem !important;
+}
+
+.logo-upn{
+  width: 40px;
+  height: 45px;
+}
+
+.bg-dark {
+  background-color: #212529db!important;
+}
+
+/* estilos para pantallas moviles y tablet */
+@media (max-width: 768px) {
+  /* .navigation {
+    background: #2D6653;
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 235px;
+    left: 0;
+    width: 200px;
+    overflow: auto;
+  }
+
+  #main-content {
+    margin-left: 0;
+  } */
+}

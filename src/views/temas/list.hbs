@@ -1,0 +1,58 @@
+<div class="main-container">
+        {{!-- <header class="main-header"> --}}
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/temas/CuentasEstudiantes" class="nav-link"></a></li>
+                    <li><a href="/temas/cuentasestudiante" class="nav-link">Cuentas de Estudiantes</a></li>
+                    <li><a href="/temas" class="nav-link">Temas</a></li>
+                    <li><a href="/temas/Examenes" class="nav-link">Exámenes</a></li>
+                    <li><a href="/temas/RendimientoEstudiantes" class="nav-link">Rendimiento</a></li>
+                    <li><a href="/logout">Salir</a></li>
+                </ul>
+            </nav>
+        {{!-- </header> --}}
+    </div>
+        {{!-- {{/each}} --}}
+      <div id="main-content">
+        <!-- El contenido de inicia en Blanco, luego al dar clic en Cuentas de Estudiantes, Temas, Exámenes, Rendimiento mostraría el contenido de /api/Docentes/CuentasEstudiantes,/api/Docentes/Temas, /api/Docentes/Examenes, /api/Docentes/RendimientoEstudiantes en la etiqueta div id="main-content"  -->
+
+            <h1 class="pt-2">Temas Creados</h1>
+
+          {{!-- mostrar un car al darle click en Temas --}}
+
+           <div class="container p-4">
+            <div class="row">
+              {{#each temas}}
+                <div class="col-md-3 p-2">
+                  <div class="card text-center bg-dark text-light h-100">
+                    <div class="card-body">
+                      {{!-- <a href="{{url}}" target="_blank" class="text-light"> --}}
+                      <a href="academia/Examenes" target="_blank" class="text-light">
+                        <h3 class="card-title text-uppercase">
+                          {{nombre}}
+                        </h3>
+                      </a>
+                      <p class="m-2">{{descripcion}}</p>
+                      <p class="text-muted">
+                        {{timeago created_at}}
+                      </p>
+                      <a class="btn btn-danger" href="/temas/delete/{{id}}">
+                        Eliminar curso
+                      </a>
+                      <a class="btn btn-secondary" href="/temas/edit/{{id}}">
+                        Edit
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              {{else}}
+                <div class="col-md-4 mx-auto">
+                  <div class="card card-body text-center bg-dark text-light">
+                    <p>No tienes Temas Creados.</p>
+                    <a href="/temas/add" class="text-success">Crear Un Tema!</a>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+    </div>

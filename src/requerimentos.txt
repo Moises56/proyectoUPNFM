@@ -1,0 +1,40 @@
+Gestión de Usuarios:
+1.	 El sistema debe permitir el registro y autenticación de los usuarios (estudiantes y docentes). 
+    Código . El formato final debe tener los logos de la UPNFM y Dirección de Programas Especiales
+ 
+ 
+Autenticación, Registro
+Los docentes deben poder gestionar los perfiles de los estudiantes, incluyendo la creación, 
+modificación y eliminación.
+
+Gestión de Temas de estudio:
+Los docentes deben ser capaces de crear y gestionar distintos temas de estudio, 
+que representarán las áreas de aprendizaje (por ejemplo: Programación I, 
+Programación III, matemáticas, inglés, alfabetización digital, etc.).
+
+
+Gestión de Exámenes:
+·Los docentes deben poder crear, editar y eliminar tests de selección única para cada uno de los temas.
+·Cada test debe tener la opción de contener varias preguntas, cada una con 4 opciones de respuesta 
+ y una única respuesta correcta
+
+Rendimiento de Exámenes:
+·Los estudiantes deben ser capaces de acceder y realizar los tests de selección única por cada tema respectivo.
+·El sistema debe ser capaz de calificar automáticamente los tests y proporcionar una retroalimentación inmediata
+
+Seguimiento del Rendimiento:
+·El sistema debe llevar un registro del rendimiento de cada estudiante, incluyendo las calificaciones obtenidas en los tests y el progreso a lo largo del tiempo.
+·Los docentes deben poder acceder a estos registros para supervisar el rendimiento de los estudiantes
+
+
+1. Creación de la Base de Datos	
+    Crear las tablas: usuarios, temas, tests, preguntas y resultados_tests en la base de datos MySQL.
+2. Registro de Usuario	Implementar la funcionalidad para que los usuarios puedan registrarse en la aplicación. Los detalles del usuario (nombre, email, contraseña y rol) deben almacenarse en la tabla usuarios.
+3. Inicio de Sesión de Usuario	Implementar la funcionalidad para que los usuarios puedan iniciar sesión en la aplicación. Los datos de la sesión del usuario deben almacenarse para personalizar su experiencia en la aplicación.
+4. Cierre de Sesión de Usuario	Implementar la funcionalidad para que los usuarios puedan cerrar sesión en la aplicación.
+5. Visualización de Cuentas de Estudiantes (para Docentes)	Implementar la funcionalidad para que los docentes puedan ver una lista de todas las cuentas de estudiantes.
+6. Gestión de Temas (para Docentes)	Implementar la funcionalidad para que los docentes puedan ver y gestionar los temas que han creado.
+7. Gestión de Exámenes (para Docentes)	Implementar la funcionalidad para que los docentes puedan ver y gestionar los exámenes que han creado.
+8. Visualización de Rendimiento de Estudiantes (para Docentes)	Implementar la funcionalidad para que los docentes puedan ver el rendimiento de los estudiantes en los exámenes.
+
+

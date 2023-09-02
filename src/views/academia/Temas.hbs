@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temas</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre del tema</th>
+        <th>Descripción</th>
+        <th>Editar</th>
+        <th>Borrar</th>
+      </tr>
+    </thead>
+    <tbody>
+  <% if (typeof temas !== 'undefined' && temas.length > 0) { %> <!-- Comprueba si "temas" existe y si tiene elementos -->
+    <% temas.forEach(function(tema) { %>
+      <tr>
+        <td><%= tema.nombre %></td>
+        <td><%= tema.descripcion %></td>
+      </tr>
+    <% }); %>
+  <% } else { %>
+    <tr>
+      <td colspan="2">No hay temas disponibles</td> <!-- Muestra un mensaje si "temas" está vacío -->
+    </tr>
+  <% } %>
+</tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<header class="bg-image-register">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <form class="card card-body bg-dark text-white p-5" action="/temas/addEstudents" method="POST">
+          <h3 class="text-center fw-bold mb-4">Regístrar Estudiante</h3>
+
+          <label for="nombre">Escriba el nombre del estudiante:</label>
+          <input type="type" name="nombre" placeholder="usuario" class="form-control mb-3" autofocus />
+
+          <label for="username">Escriba el Correo:</label>
+          <input type="email" name="email" placeholder="youremail@mail.com" class="form-control mb-3" />
+
+          <label for="password">Escriba la Contraseña:</label>
+          <input type="password" name="password1" placeholder="Contraseña" class="form-control mb-3" />
+
+          {{!-- Confirm your password --}}
+          <label for="password">Confirmar la Contraseña:</label>
+          <input type="password" name="password2" placeholder="Contraseña" class="form-control mb-3" />
+
+          {{!-- role docente o estudiante --}}
+          <select class="form-select" name="role" aria-label="Default select example" placeholder="Rol">
+            {{!-- <option ></option> --}}
+            {{!-- <option value="docente">Docente</option> --}}
+            <option value="estudiante">Estudiante</option>
+          </select>
+
+
+          <button class="btn btn-success btn-block mt-4">
+            Registrar
+          </button>
+      </div>
+      </form>
+
+      {{! Link }}
+      {{!-- <p class="fs-5 text-center text-white mt-3">¿Ya tiene una cuenta?
+        <a href="/signin" class="text-info">Login</a>
+      </p> --}}
+    </div>
+  </div>
+</header>

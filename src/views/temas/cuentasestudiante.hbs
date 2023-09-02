@@ -1,0 +1,84 @@
+{{!-- <table class="text-white">
+    <thead class="text-white">
+      <tr class="text-white">
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Contraseña</th>
+        <th>Editar</th>
+        <th>Borrar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% estudiantes.forEach(function(estudiante) { %>
+        <tr>
+          <td><%= estudiante.nombre %></td>
+          <td><%= estudiante.email %></td>
+          <td><%= estudiante.password %></td>
+          <td><a href="/api/Docentes/CuentasEstudiantes/editar/<%= estudiante.id %>">Editar</a></td>
+          <td><a href="/api/Docentes/CuentasEstudiantes/borrar/<%= estudiante.id %>">Borrar</a></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table> --}}
+
+<div class="main-container">
+        {{!-- <header class="main-header"> --}}
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/temas/CuentasEstudiantes" class="nav-link"></a></li>
+                    <li><a href="/temas/cuentasestudiante" class="nav-link">Cuentas de Estudiantes</a></li>
+                    <li><a href="/temas" class="nav-link">Temas</a></li>
+                    <li><a href="/temas/Examenes" class="nav-link">Exámenes</a></li>
+                    <li><a href="/temas/RendimientoEstudiantes" class="nav-link">Rendimiento</a></li>
+                    <li><a href="/logout">Salir</a></li>
+                </ul>
+            </nav>
+        {{!-- </header> --}}
+    </div>
+        {{!-- {{/each}} --}}
+      <div id="main-content">
+        <!-- El contenido de inicia en Blanco, luego al dar clic en Cuentas de Estudiantes, Temas, Exámenes, Rendimiento mostraría el contenido de /api/Docentes/CuentasEstudiantes,/api/Docentes/Temas, /api/Docentes/Examenes, /api/Docentes/RendimientoEstudiantes en la etiqueta div id="main-content"  -->
+
+            <h1 class="pt-2">Estudiantes Registrados</h1>
+          
+            <a class="btn btn-primary" href="/temas/addEstudents">Registrar un Estudiante</a>
+
+
+             <div class="container pt-5">
+              <div class="row">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#Id</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Correo</th>
+                      <th scope="col">Contraseña</th>
+                      <th scope="col">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      {{!-- recorrer estudiantes --}}
+                      {{#each estudiantes}}
+                    <tr>
+                      <th scope="row">{{id}}</th>
+                      <td>{{nombre}} </td>
+                      <td>{{email}} </td>
+                      <td>{{password}} </td>
+                      <td>
+                        <a href="/temas/editarEstudiante/{{id}}" class="btn btn-secondary">
+                          <i class="fas fa-marker"></i>
+                        </a>
+                        <a href="/temas/eliminarEstudiante/{{id}}" class="btn btn-danger">
+                          <i class="far fa-trash-alt"></i>
+                      </td>
+                    </tr>
+                      {{!-- <a class="btn btn-danger" href="/temas/delete/{{id}}"></a> --}}
+                   
+                    {{/each}}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+    </div>
+

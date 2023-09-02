@@ -1,0 +1,45 @@
+<div class="container p-4 h-100">
+  <div class="row h-75 d-flex align-items-center">
+    <div class="col-md-4 mx-auto">
+      <div class="card bg-dark">
+        <form action="/temas/add" method="POST" class="card-body">
+
+            <h1 class="text-light mb-3 h4">Crear un curso</h1>
+          
+          <label for="nombre" class="text-white">Escribir un tema:</label>
+          <input
+            type="text"
+            name="nombre"
+            class="form-control bg-dark text-light mb-3"
+            placeholder="Nombre"
+            autofocus
+          />
+{{!-- 
+          <label for="url">Website:</label>
+          <input
+            type="url"
+            name="url"
+            class="form-control bg-dark text-light mb-3"
+            placeholder="URL"
+          /> --}}
+
+          <label for="descripcion" class="text-white">Escribir una descripcion:</label>
+          <textarea
+            name="descripcion"
+            rows="2"
+            class="form-control bg-dark text-light mb-3"
+            placeholder="Descripcion"
+          ></textarea>
+
+          {{! Title and save button }}
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <button class="btn btn-success btn-block">
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
