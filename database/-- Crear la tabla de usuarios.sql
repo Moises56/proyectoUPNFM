@@ -63,3 +63,11 @@ CREATE TABLE resultados_tests (
   FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
   FOREIGN KEY (test_id) REFERENCES tests(id)
 );
+
+
+CREATE TABLE sessions (
+    session_id VARCHAR(128) PRIMARY KEY,
+    expires INT,
+    data MEDIUMTEXT
+);
+
