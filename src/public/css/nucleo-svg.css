@@ -1,0 +1,102 @@
+.icon {
+  display: inline-block;
+  color: #111111;
+  height: 1em;
+  width: 1em;
+}
+
+.icon use {
+  fill: #7ea6f6;
+}
+
+.icon.icon-outline use {
+  stroke: #7ea6f6;
+}
+
+.icon-xs {
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.icon-sm {
+  height: 0.8em;
+  width: 0.8em;
+}
+
+.icon-lg {
+  height: 1.6em;
+  width: 1.6em;
+}
+
+.icon-xl {
+  height: 2em;
+  width: 2em;
+}
+
+.icon-text-aligner {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text-aligner .icon {
+  color: inherit;
+  margin-right: 0.4em;
+}
+
+.icon-text-aligner .icon use {
+  color: inherit;
+  fill: currentColor;
+}
+
+.icon-text-aligner .icon.icon-outline use {
+  stroke: currentColor;
+}
+
+
+.icon {
+  fill: currentColor;
+  stroke: none;
+}
+
+.icon.icon-outline {
+  fill: none;
+  stroke: currentColor;
+}
+
+.icon use {
+  stroke: none;
+}
+
+.icon.icon-outline use {
+  fill: none;
+}
+
+.icon-outline.icon-stroke-1 {
+  stroke-width: 1px;
+}
+
+.icon-outline.icon-stroke-2 {
+  stroke-width: 2px;
+}
+
+.icon-outline.icon-stroke-3 {
+  stroke-width: 3px;
+}
+
+.icon-outline.icon-stroke-4 {
+  stroke-width: 4px;
+}
+
+.icon-outline.icon-stroke-1 use,
+.icon-outline.icon-stroke-3 use {
+  -webkit-transform: translateX(0.5px) translateY(0.5px);
+  -moz-transform: translateX(0.5px) translateY(0.5px);
+  -ms-transform: translateX(0.5px) translateY(0.5px);
+  -o-transform: translateX(0.5px) translateY(0.5px);
+  transform: translateX(0.5px) translateY(0.5px);
+}
+
+#Capa_1{width: 90px;margin-left: -7px;}
+
+.sidenav-header .navbar-brand{display: contents;}
+.cls-1{fill:#fbf9f9;}.cls-2{fill:#222a2a;}.cls-3{fill:#bc9e56;}.cls-4{fill:#f8f8fb;}.cls-5{fill:#906d3c;}.cls-6{fill:#d4c183;}.cls-7{fill:#4a4434;}.cls-8{fill:#fdfdfd;}.cls-9{fill:#fcfbfc;}.cls-10{fill:#2e2a2c;}.cls-11{fill:#bd172b;}.cls-12{fill:#309653;}.cls-13{fill:#094290;}.cls-14{fill:#144894;}

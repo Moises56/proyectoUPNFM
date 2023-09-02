@@ -10,6 +10,8 @@
 --   role ENUM('estudiante', 'docente')
 -- );
 
+use railway;
+
 use proyectocarrera;
 
 CREATE TABLE usuarios (
