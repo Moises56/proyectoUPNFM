@@ -4,7 +4,8 @@ import path from "path";
 import { create } from "express-handlebars";
 import passport from "passport";
 import cookieParser from "cookie-parser";
-import flash from "connect-flash";
+// import flash from "connect-flash";
+import flash from "express-flash";
 import session from "express-session";
 import expressMySQLSession from "express-mysql-session";
 import { promiseConnectFlash } from "async-connect-flash";
@@ -47,6 +48,8 @@ app.use(
     store: new MySQLStore({}, pool), // para guardar la cookie en la base de datos
   })
 );
+
+app.use(flash()); // para usar los mensajes flash
 
 app.use(promiseConnectFlash()); // para usar los mensajes flash
 app.use(passport.initialize()); // para inicializar passport

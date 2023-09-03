@@ -675,7 +675,7 @@
         <li class="nav-item mb-2 mt-0 ">
           <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark" aria-controls="ProfileNav"
             role="button" aria-expanded="false">
-            <img src="../assets/img/team-3.jpg" class="avatar">
+            <img src="../assets/img/team-3.png" class="avatar">
             <span class="nav-link-text ms-2 ps-1">{{user.nombre}}</span>
           </a>
           <div class="collapse" id="ProfileNav" style="">
@@ -716,12 +716,12 @@
           <div class="collapse " id="applicationsExamples">
             <ul class="nav ">
               <li class="nav-item ">
-                <a class="nav-link text-dark " href="/temas/cuentasestudiante">
+                <a class="nav-link text-dark " href="/academia/cuentasestudiantes">
                   <span class="sidenav-mini-icon"> NU </span>
                   <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
                 </a>
               </li>
-              {{!-- <li class="nav-item ">
+              <li class="nav-item ">
                 <a class="nav-link text-dark " href="">
                   <span class="sidenav-mini-icon"> AU </span>
                   <span class="sidenav-normal  ms-2  ps-1"> Actualizar </span>
@@ -732,7 +732,7 @@
                   <span class="sidenav-mini-icon"> EU </span>
                   <span class="sidenav-normal  ms-2  ps-1"> Eliminar </span>
                 </a>
-              </li> --}}
+              </li>
             </ul>
           </div>
         </li>
@@ -748,7 +748,7 @@
               <li class="nav-item ">
                 <a class="nav-link text-dark " href="/temas">
                   <span class="sidenav-mini-icon"> Lista </span>
-                  <span class="sidenav-normal  ms-2  ps-1"> temas   </span>
+                  <span class="sidenav-normal  ms-2  ps-1"> temas </span>
                 </a>
               </li>
               <li class="nav-item ">
@@ -757,16 +757,33 @@
                   <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
                 </a>
               </li>
-              {{!-- <li class="nav-item ">
-                <a class="nav-link text-dark " href="">
-                  <span class="sidenav-mini-icon"> EU </span>
-                  <span class="sidenav-normal  ms-2  ps-1"> Eliminar </span>
-                </a>
-              </li> --}}
             </ul>
           </div>
         </li>
 
+        <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#Test" class="nav-link text-dark " aria-controls="Test" role="button"
+            aria-expanded="false">
+            <i class="material-icons-round opacity-10">receipt_long</i>
+            <span class="nav-link-text ms-2 ps-1">Test</span>
+          </a>
+          <div class="collapse " id="Test">
+            <ul class="nav ">
+              <li class="nav-item ">
+                <a class="nav-link text-dark " href="/test/listTest">
+                  <span class="sidenav-mini-icon"> Lista </span>
+                  <span class="sidenav-normal  ms-2  ps-1"> Test </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark " href="/test/addTest">
+                  <span class="sidenav-mini-icon"> NU </span>
+                  <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
 
         <!-- <li class="nav-item">
           <hr class="horizontal light" />
@@ -797,8 +814,8 @@
               <div class="col-md-4 mx-auto">
                 <div class="card card-body bg-dark text-white text-center">
                   <h1 class="fw-bold text-white">Bienvenido {{user.nombre}}</h1>
-                  <h4 class="text-white" >{{user.email}}</h4>
-                  <h6 class="text-white" >{{user.role}}</h6>
+                  <h4 class="text-white">{{user.email}}</h4>
+                  <h6 class="text-white">{{user.role}}</h6>
                   <p>{{timeago user.created_at}}</p>
                   <a href="/temas" class="btn btn-primary m-4">
                     Ver Cursos

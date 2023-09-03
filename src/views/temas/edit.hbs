@@ -675,7 +675,7 @@
         <li class="nav-item mb-2 mt-0 ">
           <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark" aria-controls="ProfileNav"
             role="button" aria-expanded="false">
-            <img src="../assets/img/team-3.jpg" class="avatar">
+            <img src="../assets/img/team-3.png" class="avatar">
             <span class="nav-link-text ms-2 ps-1">{{user.nombre}}</span>
           </a>
           <div class="collapse" id="ProfileNav" style="">
@@ -716,7 +716,7 @@
           <div class="collapse " id="applicationsExamples">
             <ul class="nav ">
               <li class="nav-item ">
-                <a class="nav-link text-dark " href="/temas/cuentasestudiante">
+                <a class="nav-link text-dark " href="/academia/cuentasestudiantes">
                   <span class="sidenav-mini-icon"> NU </span>
                   <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
                 </a>
@@ -757,12 +757,30 @@
                   <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
                 </a>
               </li>
-              {{!-- <li class="nav-item ">
-                <a class="nav-link text-dark " href="">
-                  <span class="sidenav-mini-icon"> EU </span>
-                  <span class="sidenav-normal  ms-2  ps-1"> Eliminar </span>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#Test" class="nav-link text-dark " aria-controls="Test" role="button"
+            aria-expanded="false">
+            <i class="material-icons-round opacity-10">receipt_long</i>
+            <span class="nav-link-text ms-2 ps-1">Test</span>
+          </a>
+          <div class="collapse " id="Test">
+            <ul class="nav ">
+              <li class="nav-item ">
+                <a class="nav-link text-dark " href="/test/listTest">
+                  <span class="sidenav-mini-icon"> Lista </span>
+                  <span class="sidenav-normal  ms-2  ps-1"> Test </span>
                 </a>
-              </li> --}}
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark " href="/test/addTest">
+                  <span class="sidenav-mini-icon"> NU </span>
+                  <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
+                </a>
+              </li>
             </ul>
           </div>
         </li>
@@ -790,36 +808,31 @@
         <div class="col-lg-12 position-relative z-index-2">
 
           {{!-- aqui el body --}}
-
-          <div class="container p-4">
-            <div class="row">
-              <div class="col-md-4 mx-auto">
-                <div class="card bg-dark border border-dark">
-                  <div class="card-body">
-                    <form action="/temas/edit/{{tema.id}}" method="POST">
-                      <div class="form-group">
-                        <input type="text" name="nombre" class="form-control bg-dark text-light" placeholder="Nombre"
-                          value="{{tema.nombre}}" autofocus style="border: 1px solid #107fed;"  />
-                      </div>
-                      {{!-- <div class="form-group">
-                        <input type="url" name="url" class="form-control bg-dark text-light" placeholder="URL"
-                          value="{{tema.url}}" />
-                      </div> --}}
-                      <div class="form-group">
-                        <textarea name="descripcion" rows="2" class="form-control bg-dark text-light"
-                          placeholder="Descripción" style="border: 1px solid #107fed;">{{tema.descripcion}}</textarea>
-                      </div>
-                      <div class="form-group">
-                        <button class="btn btn-success btn-block">
-                          Save
-                        </button>
-                      </div>
-                    </form>
+          <div class="col-md-4 mx-auto">
+            <div class="card bg-dark border border-dark">
+              <div class="card-body text-center">
+                <form action="/temas/edit/{{tema.id}}" method="POST">
+                  <div class="form-group ">
+                    <input type="text" name="nombre" class="form-control bg-dark text-light mt-2 pt-2"
+                      placeholder="Nombre" value="{{tema.nombre}}" autofocus />
                   </div>
-                </div>
+                  <br />
+                  <div class="form-group">
+                    <textarea name="descripcion" rows="2" class="form-control bg-dark text-light"
+                      placeholder="Descripción">{{tema.descripcion}}</textarea>
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                      Save
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
+
+
 
           <!-- fin -->
 

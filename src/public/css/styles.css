@@ -1,7 +1,7 @@
 body {
   background: #fff;
   font-family: "Oswald", sans-serif;
-  overflow: hidden;
+  overflow: auto;
   height: 100vh;
 }
 
