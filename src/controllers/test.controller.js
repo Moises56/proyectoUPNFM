@@ -8,7 +8,7 @@ export const renderAddTest = async (req, res) => {
     req.user.id,
   ]);
   //mostrar por consola los temas
-  console.log(rows);
+  //console.log(rows);
 
   res.render("test/addTest", { temas: rows });
 };
@@ -56,7 +56,7 @@ export const addTest = async (req, res) => {
       ]);
 
       //mostrar por consola los temas
-      console.log(temas);
+      //console.log(temas);
 
 
       res.render("test/edit", { test: rows[0] , temas: temas[0] });

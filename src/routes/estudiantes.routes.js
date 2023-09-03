@@ -20,8 +20,8 @@ const router = Router();
 router.get('/cuentasestudiantes', isLoggedIn, isDocente, renderEstudiantes);
 
 // rutas para guardar un usuario con el rol de estudiante
-router.get('/addEstudents', isLoggedIn, isDocente, renderEst);
-router.post('/addEstudents', isLoggedIn, isDocente, saveEstudiante);
+router.get('/addEstudents', isLoggedIn, renderEst);
+router.post('/addEstudents', isLoggedIn, saveEstudiante);
 router.get('/delete/:id', isLoggedIn, isDocente, eliminarEstudiante);
 //editar un estudiante
 router.get('/edit/:id', isLoggedIn, isDocente, renderEditEstudiante);

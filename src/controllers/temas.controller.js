@@ -46,7 +46,6 @@ export const editTema = async (req, res) => {
   const newTema = {
     nombre,
     descripcion,
-    
   };
   await pool.query("UPDATE temas set ? WHERE id = ?", [newTema, id]);
   await req.setFlash("success", "Tema Actualizdo con exito");

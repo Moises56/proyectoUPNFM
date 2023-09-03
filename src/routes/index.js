@@ -7,13 +7,13 @@ import estudents from "./estudiantes.routes.js";
 import test from "./test.routes.js";
 
 
-const router = Router();
+const app = Router();
 
-router.use(index);
-router.use(auth);
-router.use(user);
-router.use("/temas", temas);
-router.use("/academia", estudents);
-router.use("/test", test);
+app.use(index);
+app.use(auth);
+app.use(user);
+app.use("/temas", temas);
+app.use("/academia", estudents);
+app.use("/test", test);
 
-export default router;
+export default app;
