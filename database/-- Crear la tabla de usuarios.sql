@@ -73,3 +73,10 @@ CREATE TABLE sessions (
     data MEDIUMTEXT
 );
 
+
+
+ALTER TABLE tests
+ADD COLUMN docente_id INT,
+ADD FOREIGN KEY (docente_id) REFERENCES usuarios(id);
+
+
