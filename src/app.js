@@ -61,6 +61,8 @@ app.use(async (req, res, next) => { // para usar variables globales en las vista
   app.locals.success = await req.getFlash("success");
   app.locals.error = await req.getFlash("error");
   app.locals.user = req.user; // para usar el usuario en las vistas
+  //mostrar el role del usuario en la consola
+  // console.log(req.user);
   next();
 });
 

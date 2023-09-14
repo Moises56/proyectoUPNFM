@@ -856,12 +856,12 @@
                                         </div>
                                         <label class="text-white" for="nombre">Nombre del Test:</label>
                                         <input type="text" name="nombre" class="form-control bg-dark text-light mb-3"
-                                            placeholder="Nombre" autofocus />
+                                            placeholder="Nombre" autofocus style="border: 1px solid #107fed;" />
                                         <label class="text-white" for="descripcion">Tema:</label>
-                                        <select class="form-control" id="tema_id" name="tema_id" required>
+                                        <select class="form-control text-white" id="tema_id" name="tema_id" required style="border: 1px solid #107fed;">
                                             <!-- Opciones de temas deben ser generadas dinámicamente desde la base de datos -->
                                             {{#each temas}}
-                                            <option value="{{id}}">{{nombre}}</option>
+                                            <option style="color: black;" value="{{id}}">{{nombre}}</option>
                                             {{/each}}
                                         </select>
                                         <button type="submit" class="btn btn-success mt-2">Guardar

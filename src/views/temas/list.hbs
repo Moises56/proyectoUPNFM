@@ -721,7 +721,7 @@
                   <span class="sidenav-normal  ms-2  ps-1"> Nuevo </span>
                 </a>
               </li>
-              <li class="nav-item ">
+              {{!-- <li class="nav-item ">
                 <a class="nav-link text-dark " href="">
                   <span class="sidenav-mini-icon"> AU </span>
                   <span class="sidenav-normal  ms-2  ps-1"> Actualizar </span>
@@ -732,7 +732,7 @@
                   <span class="sidenav-mini-icon"> EU </span>
                   <span class="sidenav-normal  ms-2  ps-1"> Eliminar </span>
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </div>
         </li>
@@ -815,23 +815,24 @@
             <div class="row">
               {{#each temas}}
               <div class="col-md-3 p-2">
-                <div class="card text-center bg-dark text-light h-100">
+
+                <div class="card text-center h-100" style="background-color: rgb(181 181 177 / 52%); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 55%), 0 2px 4px -1px rgb(71 54 54 / 35%);">
                   <div class="card-body">
                     {{!-- <a href="{{url}}" target="_blank" class="text-light"> --}}
                       <a href="academia/Examenes" target="_blank" class="text-light">
-                        <h3 class="card-title text-uppercase text-white">
+                        <h3 class="card-title text-capitalize font-italic" style="font-size: 1.5rem;">
                           {{nombre}}
                         </h3>
                       </a>
-                      <p class="m-2">{{descripcion}}</p>
+                      <p class="m-2" style="color: black;">{{descripcion}}</p>
                       <p class="text-muted">
                         {{timeago created_at}}
                       </p>
                       <a class="btn btn-danger" href="/temas/delete/{{id}}">
-                        Eliminar
+                        <i class="far fa-trash-alt"></i>
                       </a>
                       <a class="btn btn-secondary" href="/temas/edit/{{id}}">
-                        Editar
+                        <i class="fas fa-marker"></i>
                       </a>
                   </div>
                 </div>

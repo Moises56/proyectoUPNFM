@@ -8,7 +8,6 @@ import {
   deleteTema,
   editTema,
   renderEditTema,
-  
 
 } from "../controllers/temas.controller.js";
 import { createTemaSchema } from "../schemas/task.schema.js";
@@ -22,5 +21,8 @@ router.post("/add", isLoggedIn, isDocente, addTema);
 router.get("/delete/:id", isLoggedIn, isDocente, deleteTema);
 router.get("/edit/:id", isLoggedIn, isDocente, renderEditTema);
 router.post("/edit/:id", isLoggedIn, isDocente, editTema);
+
+
+
 
 export default router;

@@ -1,4 +1,6 @@
+
 export const isLoggedIn = (req, res, next) => {
+  console.log('Role: ' + req.user.role);
   if (!req.isAuthenticated()) return res.redirect("/signin");
   return next();
 };
@@ -16,4 +18,5 @@ export const isDocente = (req, res, next) => {
   req.flash("error", "No tienes permiso para acceder a esta ruta");
   return res.redirect("/temas");
 };
+
 
